@@ -33,3 +33,8 @@ if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 # nvm
 export NVM_DIR=~/.nvm
 . $(brew --prefix nvm)/nvm.sh
+
+# Go
+export GOPATH=$HOME
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
