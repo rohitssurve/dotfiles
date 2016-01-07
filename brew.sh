@@ -187,6 +187,9 @@ brew install jenv
 
 brew install maven
 
+# Go
+brew install go
+
 # NodeJS
 brew install nvm
 brew install node
