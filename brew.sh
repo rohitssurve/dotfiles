@@ -204,6 +204,8 @@ brew cask install --appdir="/Applications" robomongo
 brew install redis
 brew install cassandra
 
+brew install mesos
+
 brew install nginx
 
 brew install zookeeper
