@@ -38,3 +38,6 @@ export NVM_DIR=~/.nvm
 export GOPATH=$HOME
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
+
+# autoenv
+source /usr/local/opt/autoenv/activate.sh

@@ -53,6 +53,8 @@ brew install bash
 
 brew install bash-completion
 
+brew install autoenv
+
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
@@ -186,6 +188,9 @@ brew tap jenv/jenv
 brew install jenv
 
 brew install maven
+
+# sbt is a build tool for Scala, Java, and more
+brew install sbt
 
 # Go
 brew install go
