@@ -50,6 +50,7 @@ brew install gzip
 
 # In order to use this build of bash as your login shell, it must be added to /etc/shells
 brew install bash
+brew install mobile-shell
 
 brew install bash-completion
 
