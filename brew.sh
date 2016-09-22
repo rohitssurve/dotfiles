@@ -73,6 +73,7 @@ brew install socat
 brew install tcpflow
 brew install tcpreplay
 brew install tcptrace
+brew install httpstat
 
 # Git
 brew install git
@@ -101,7 +102,7 @@ brew install webkit2png
 # https://openssl.org/
 brew install openssl
 
-
+brew install csshx
 brew cask install --appdir="/Applications" iterm2
 
 # Install command-line fuzzy finder
@@ -217,6 +218,7 @@ brew install nginx
 brew install zookeeper
 
 brew install kafka
+brew install kafkacat
 
 brew install apache-spark
 
