@@ -118,7 +118,7 @@ brew cask install --appdir="/Applications" spectacle
 brew cask install --appdir="/Applications" jumpcut
 
 brew cask install --appdir="/Applications" lastpass
-brew cask install --appdir="/Applications" 1password
+# brew cask install --appdir="/Applications" 1password
 
 brew cask install --appdir="/Applications" evernote
 
@@ -135,7 +135,7 @@ brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" firefox
 
 brew cask install --appdir="/Applications" google-drive
-brew cask install --appdir="/Applications" dropbox
+# brew cask install --appdir="/Applications" dropbox
 
 # brew cask install --appdir="/Applications" google-hangouts
 brew cask install --appdir="/Applications" skype

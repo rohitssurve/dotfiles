@@ -30,6 +30,9 @@ shopt -s cdspell;
 # jenv
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 
+# Java
+export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
+
 # nvm
 export NVM_DIR=~/.nvm
 . $(brew --prefix nvm)/nvm.sh
