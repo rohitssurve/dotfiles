@@ -30,6 +30,13 @@ shopt -s cdspell;
 # jenv
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 
+# pyenv
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
+# virtualenvwrapper
+export WORKON_HOME=~/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+
 # Java
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 
@@ -44,3 +51,6 @@ export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 # autoenv
 source /usr/local/opt/autoenv/activate.sh
+
+# Homebrew's sbin
+export PATH="/usr/local/sbin:$PATH"

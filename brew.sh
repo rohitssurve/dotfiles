@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-# Install the latest XCode
-sudo xcodebuild -license
+# Install the latest XCode and Accept License
+sudo xcodebuild -license accept
 
 # Ask for the administrator password upfront.
 sudo -v
@@ -47,6 +47,8 @@ brew install gnu-tar --with-default-names
 brew install gnu-which --with-default-names
 brew install grep --with-default-names
 brew install gzip
+
+brew install pstree
 
 # In order to use this build of bash as your login shell, it must be added to /etc/shells
 brew install bash
@@ -102,12 +104,15 @@ brew install webkit2png
 # https://openssl.org/
 brew install openssl
 
+brew install tmux
 brew install csshx
+brew install pssh
 brew cask install --appdir="/Applications" iterm2
 
 # Install command-line fuzzy finder
 # https://github.com/junegunn/fzf
-brew reinstall --HEAD fzf
+brew install fzf
+/usr/local/opt/fzf/install -all
 
 brew cask install --appdir="/Applications" cheatsheet
 
@@ -131,31 +136,31 @@ brew cask install --appdir="/Applications" vagrant-manager
 
 brew cask install --appdir="/Applications" dockertoolbox
 
-brew cask install --appdir="/Applications" google-chrome
-brew cask install --appdir="/Applications" firefox
+# brew cask install --appdir="/Applications" google-chrome
+# brew cask install --appdir="/Applications" firefox
 
 brew cask install --appdir="/Applications" google-drive
 # brew cask install --appdir="/Applications" dropbox
 
 # brew cask install --appdir="/Applications" google-hangouts
-brew cask install --appdir="/Applications" skype
+# brew cask install --appdir="/Applications" skype
 
-brew cask install --appdir="/Applications" slack
+# brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" adium
 
-brew cask install --appdir="/Applications" teamviewer
+# brew cask install --appdir="/Applications" teamviewer
 
-
+brew install graphviz
 brew cask install --appdir="/Applications" doxygen
 
 # brew cask install --appdir="/Applications" lightpaper
 
 brew cask install --appdir="/Applications" atom
 brew cask install --appdir="/Applications" sublime-text
-brew cask install --appdir="/Applications" intellij-idea
+brew cask install --appdir="/Applications" intellij-idea-ce
 brew cask install --appdir="/Applications" eclipse-java
 brew cask install --appdir="/Applications" webstorm
-brew cask install --appdir="/Applications" pycharm
+brew cask install --appdir="/Applications" pycharm-ce
 brew cask install --appdir="/Applications" phpstorm
 brew cask install --appdir="/Applications" rstudio
 
