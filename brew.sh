@@ -48,8 +48,6 @@ brew install gnu-which --with-default-names
 brew install grep --with-default-names
 brew install gzip
 
-brew install pstree
-
 # In order to use this build of bash as your login shell, it must be added to /etc/shells
 brew install bash
 brew install mobile-shell
@@ -104,9 +102,7 @@ brew install webkit2png
 # https://openssl.org/
 brew install openssl
 
-brew install tmux
 brew install csshx
-brew install pssh
 brew cask install --appdir="/Applications" iterm2
 
 # Install command-line fuzzy finder
@@ -150,17 +146,17 @@ brew cask install --appdir="/Applications" adium
 
 # brew cask install --appdir="/Applications" teamviewer
 
-brew install graphviz
-brew cask install --appdir="/Applications" doxygen
+# brew install graphviz
+# brew cask install --appdir="/Applications" doxygen
 
 # brew cask install --appdir="/Applications" lightpaper
 
 brew cask install --appdir="/Applications" atom
 brew cask install --appdir="/Applications" sublime-text
-brew cask install --appdir="/Applications" intellij-idea-ce
+brew cask install --appdir="/Applications" intellij-idea
 brew cask install --appdir="/Applications" eclipse-java
 brew cask install --appdir="/Applications" webstorm
-brew cask install --appdir="/Applications" pycharm-ce
+brew cask install --appdir="/Applications" pycharm
 brew cask install --appdir="/Applications" phpstorm
 brew cask install --appdir="/Applications" rstudio
 
