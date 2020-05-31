@@ -1,15 +1,13 @@
-# add a "gnubin" directory to your PATH
-PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-
-# add the "gnuman" directory to your MANPATH
-MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-
 export PATH="/usr/local/bin:$PATH"
 
-# readline
-export LDFLAGS="-L/usr/local/opt/readline/lib"
-export CPPFLAGS="-I/usr/local/opt/readline/include"
-export PKG_CONFIG_PATH="/usr/local/opt/readline/lib/pkgconfig"
+# gnubin
+PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+
+# gnuman
+MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+
+# openssl
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 
 # zlib
 export LDFLAGS="-L/usr/local/opt/zlib/lib"
@@ -18,6 +16,29 @@ export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
 
 # ncurses
 export PATH="/usr/local/opt/ncurses/bin:$PATH"
-export LDFLAGS="-L/usr/local/opt/ncurses/lib"
-export CPPFLAGS="-I/usr/local/opt/ncurses/include"
-export PKG_CONFIG_PATH="/usr/local/opt/ncurses/lib/pkgconfig"
+
+# krb5
+export PATH="/usr/local/opt/krb5/bin:$PATH"
+export PATH="/usr/local/opt/krb5/sbin:$PATH"
+
+# cython
+export PATH="/usr/local/opt/cython/bin:$PATH"
+
+# ssh-copy-id
+export PATH="/usr/local/opt/ssh-copy-id/bin:$PATH"
+
+# icu4c
+export PATH="/usr/local/opt/icu4c/bin:$PATH"
+export PATH="/usr/local/opt/icu4c/sbin:$PATH"
+
+# llvm
+export PATH="/usr/local/opt/llvm/bin:$PATH"
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+
+# node@10
+export PATH="/usr/local/opt/node@10/bin:$PATH"
+
+# binutils
+export PATH="/usr/local/opt/binutils/bin:$PATH"
