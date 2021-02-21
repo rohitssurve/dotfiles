@@ -2,8 +2,6 @@
 
 cd "$(dirname "${BASH_SOURCE}")";
 
-git pull origin master;
-
 function doIt() {
 	# rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
 	# 	--exclude "README.md" --exclude "LICENSE-MIT.txt" -avh --no-perms . ~;
@@ -14,6 +12,11 @@ function doIt() {
 	ln -s dotfiles/.exports ~/.exports
 	ln -s dotfiles/.aliases ~/.aliases
 	# source ~/.bash_profile;
+
+	# Install Command Line Tools
+	# xcode-select --install
+	# Install the latest XCode and Accept License
+	# sudo xcodebuild -license accept
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then

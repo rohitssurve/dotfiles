@@ -3,42 +3,25 @@ export PATH="/usr/local/bin:$PATH"
 # gnubin
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 
-# gnuman
-MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+# binutils
+export PATH="/usr/local/opt/binutils/bin:$PATH"
 
 # openssl
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 
-# zlib
-export LDFLAGS="-L/usr/local/opt/zlib/lib"
-export CPPFLAGS="-I/usr/local/opt/zlib/include"
-export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
-
-# ncurses
-export PATH="/usr/local/opt/ncurses/bin:$PATH"
-
-# krb5
-export PATH="/usr/local/opt/krb5/bin:$PATH"
-export PATH="/usr/local/opt/krb5/sbin:$PATH"
-
-# cython
-export PATH="/usr/local/opt/cython/bin:$PATH"
-
 # ssh-copy-id
 export PATH="/usr/local/opt/ssh-copy-id/bin:$PATH"
+
+# openjdk
+export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
+
+# jenv
+export PATH="$HOME/.jenv/bin:$PATH"
 
 # icu4c
 export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
 
-# llvm
-export PATH="/usr/local/opt/llvm/bin:$PATH"
-
-# nvm
-export NVM_DIR="$HOME/.nvm"
-
-# node@10
-export PATH="/usr/local/opt/node@10/bin:$PATH"
-
-# binutils
-export PATH="/usr/local/opt/binutils/bin:$PATH"
+# krb5
+export PATH="/usr/local/opt/krb5/bin:$PATH"
+export PATH="/usr/local/opt/krb5/sbin:$PATH"

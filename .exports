@@ -18,73 +18,39 @@ export MANPAGER='less -X';
 # Always use color output for `ls`
 export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.avi=01;35:*.fli=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.ogg=01;35:*.mp3=01;35:*.wav=01;35:'
 
-# pyenv
-# To use Homebrew's directories rather than ~/.pyenv add to your profile:
-export PYENV_ROOT=/usr/local/var/pyenv
 
-# virtualenvwrapper
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
-export WORKON_HOME=~/.virtualenvs
-
-# jenv
-export JENV_ROOT=/usr/local/var/jenv
-
-# Java
-export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
-
-# nvm
-export NVM_DIR=~/.nvm
+# binutils
+export LDFLAGS="-L/usr/local/opt/binutils/lib"
+export CPPFLAGS="-I/usr/local/opt/binutils/include"
 
 # openssl
 export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
 export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
 
-# krb5
-export LDFLAGS="-L/usr/local/opt/krb5/lib"
-export CPPFLAGS="-I/usr/local/opt/krb5/include"
-export PKG_CONFIG_PATH="/usr/local/opt/krb5/lib/pkgconfig"
-
 # readline
 export LDFLAGS="-L/usr/local/opt/readline/lib"
 export CPPFLAGS="-I/usr/local/opt/readline/include"
 export PKG_CONFIG_PATH="/usr/local/opt/readline/lib/pkgconfig"
 
-# python@3.8
-# export LDFLAGS="-L/usr/local/opt/python@3.8/lib"
-# export PKG_CONFIG_PATH="/usr/local/opt/python@3.8/lib/pkgconfig"
+# zlib
+export LDFLAGS="-L/usr/local/opt/zlib/lib"
+export CPPFLAGS="-I/usr/local/opt/zlib/include"
+export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
 
-# ncurses
-export LDFLAGS="-L/usr/local/opt/ncurses/lib"
-export CPPFLAGS="-I/usr/local/opt/ncurses/include"
-export PKG_CONFIG_PATH="/usr/local/opt/ncurses/lib/pkgconfig"
+# openjdk
+export CPPFLAGS="-I/usr/local/opt/openjdk@11/include"
 
 # icu4c
 export LDFLAGS="-L/usr/local/opt/icu4c/lib"
 export CPPFLAGS="-I/usr/local/opt/icu4c/include"
 export PKG_CONFIG_PATH="/usr/local/opt/icu4c/lib/pkgconfig"
 
-# libffi
-export LDFLAGS="-L/usr/local/opt/libffi/lib"
-export CPPFLAGS="-I/usr/local/opt/libffi/include"
-export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
+# krb5
+export LDFLAGS="-L/usr/local/opt/krb5/lib"
+export CPPFLAGS="-I/usr/local/opt/krb5/include"
+export PKG_CONFIG_PATH="/usr/local/opt/krb5/lib/pkgconfig"
 
-# openblas
-export LDFLAGS="-L/usr/local/opt/openblas/lib"
-export CPPFLAGS="-I/usr/local/opt/openblas/include"
-export PKG_CONFIG_PATH="/usr/local/opt/openblas/lib/pkgconfig"
-
-# libc++
-LDFLAGS="-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
-
-# llvm
-export LDFLAGS="-L/usr/local/opt/llvm/lib"
-export CPPFLAGS="-I/usr/local/opt/llvm/include"
-
-# node@10
-export LDFLAGS="-L/usr/local/opt/node@10/lib"
-export CPPFLAGS="-I/usr/local/opt/node@10/include"
-
-# binutils
-export LDFLAGS="-L/usr/local/opt/binutils/lib"
-export CPPFLAGS="-I/usr/local/opt/binutils/include"
+# virtualenvwrapper
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+export WORKON_HOME=~/.virtualenvs
